@@ -348,3 +348,9 @@
 .underline {
   border-bottom: 1px solid black;
 }
+
+
+/* Удалю в след. коммите */
+.tests {
+  height: 1px;
+}
