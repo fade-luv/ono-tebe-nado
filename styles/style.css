@@ -59,18 +59,20 @@
   text-underline-position: under;
 }
 .jambotron {
+  position: relative;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 179px;
+  min-height: 757px;
 }
 
-.jambotron__overlay {
-  min-height: 757px;
-  width: 1100px;
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background-color: rgb(0 0 0 / 0.6);
-  padding-top: 165px;
 }
 
 .cover__title {
@@ -82,6 +84,7 @@
   color: white;
   text-transform: uppercase;
   line-height: 115px;
+  margin-top: 165px;
 }
 
 .accent-span {
@@ -96,19 +99,10 @@
 
 .text-right {
   text-align: right;
-  letter-spacing: 0.6em;
-  margin-right: -60px;
   line-height: 100px;
 }
-.latter {
-  letter-spacing: 0.6em;
-  line-height: 115px;
-}
-.latter_one {
-  letter-spacing: 0.3em;
-}
 
-.jambotron__footer {
+.cover__footer {
   width: 1000px;
   margin: 135px auto;
   display: flex;
@@ -116,7 +110,7 @@
   justify-content: space-between;
 }
 
-.jambotron__subtitle {
+.cover__subtitle {
   color: white;
   display: block;
   font-size: 22px;
@@ -124,15 +118,29 @@
   text-transform: uppercase;
   margin-left: 28px;
 }
-.latte1 {
-  letter-spacing: 0.8em;
-}
-.latte2 {
-  letter-spacing: 1.1em;
+
+.cover__title__letter-spacing-normal {
+  letter-spacing: 0.6em;
 }
 
-.latte3 {
+.cover__title__letter-spacing-low {
+  letter-spacing: 0.3em;
+}
+
+.cover__title__letter-spacing-disabled {
+  letter-spacing: 0;
+}
+
+.cover__subtitle__letter-spacing-low {
+  letter-spacing: 0.8em;
+}
+
+.cover__subtitle__letter-spacing-normal {
   letter-spacing: 0.9em;
+}
+
+.cover__subtitle__letter-spacing-high {
+  letter-spacing: 1.1em;
 }
 
 .jambotron__make-bet-button {
@@ -185,13 +193,6 @@
   background-position: center;
   position: relative;
   z-index: 1;
-}
-/* Переписал затеменение с помощью дополнительного блока ovelray. Решил попрактиковаться в позиционировании  */
-.card_overlay {
-  background-color: rgb(0 0 0 / 0.6);
-  position: absolute;
-  inset: 0;
-  z-index: 0;
 }
 
 .card-type-film {
