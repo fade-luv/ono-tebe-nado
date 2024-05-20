@@ -12,13 +12,13 @@
 .header__logo {
   flex-grow: 1;
   width: 275px;
-  height: 105;
+  min-height: 105;
   display: flex;
 }
 
 .header__logo-image {
   width: 129px;
-  height: 101px;
+  min-height: 101px;
 }
 .header__menu {
   flex-grow: 1;
@@ -67,7 +67,7 @@
 }
 
 .jambotron__overlay {
-  height: 757px;
+  min-height: 757px;
   width: 1100px;
   background-color: rgb(0 0 0 / 0.6);
   padding-top: 165px;
@@ -110,7 +110,6 @@
 
 .jambotron__footer {
   width: 1000px;
-  height: 51px;
   margin: 135px auto;
   display: flex;
   align-items: center;
@@ -138,8 +137,10 @@
 
 .jambotron__make-bet-button {
   box-sizing: border-box;
-  width: 256px;
-  height: 52px;
+  padding-left: 31px;
+  padding-right: 32px;
+  padding-top: 12px;
+  padding-bottom: 11px;
   background: transparent;
   border: 1px solid white;
   text-transform: uppercase;
@@ -297,7 +298,7 @@
 
 .footer__social-item-link-image {
   width: 48px;
-  height: 48px;
+  min-height: 48px;
 }
 
 .footer_address-item {
