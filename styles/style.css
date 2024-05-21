@@ -186,7 +186,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   padding: 51px 40px 48px;
   background-repeat: no-repeat;
   background-size: cover;
